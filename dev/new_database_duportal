@@ -258,7 +258,16 @@ INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, descrip
 
 
 INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (97, 'getPssForSnapshot', 'Get get Pss for Snapshot', 11, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (98, 'getInternalPssForStoresAndDm', 'Get Internal Pss for Stores and Data master', 10, current_timestamp, current_timestamp);
 
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (99, 'getSourceOfTarget', 'Get Source of target', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (100, 'createNewProjectionFromTarget', 'Create new projection from target', 10, current_timestamp, current_timestamp);
+
+
+--##############################################################################################################################
+--##############################################################################################################################
+--##############################################################################################################################
+--##############################################################################################################################
 
 
 --#--group_permission delete from duportal.group_permission
@@ -487,6 +496,12 @@ INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permis
 
 INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (172, '87a59e0f-dd8c-4820-9bbe-a1ee46ab1bb3', 1, 96, 't', current_timestamp, current_timestamp);
 INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (173, '87a59e0f-dd8c-4820-9bbe-a1ee46ab1bb3', 1, 97, 't', current_timestamp, current_timestamp);
+
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (174, '87a59e0f-dd8c-4820-9bbe-a1ee46ab1bb3', 1, 98, 't', current_timestamp, current_timestamp);
+
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (175, '87a59e0f-dd8c-4820-9bbe-a1ee46ab1bb3', 1, 99, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (176, '87a59e0f-dd8c-4820-9bbe-a1ee46ab1bb3', 2, 100, 't', current_timestamp, current_timestamp);
+
 
 
 delete from duportal.postgraphql_operation where operation_id >= 43
