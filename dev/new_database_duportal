@@ -136,6 +136,7 @@ INSERT INTO duportal.portal_menu(portal_menu_id, portal_menu_name, url, is_activ
 
 
 
+UPDATE duportal.portal_menu SET portal_menu_name = 'DO' where portal_menu_id = 10
 
 --postgraphql_operation
 --SI
@@ -264,6 +265,8 @@ INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, descrip
 INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (100, 'createNewProjectionFromTarget', 'Create new projection from target', 10, current_timestamp, current_timestamp);
 
 INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (101, 'getInternalPssForSnapshot', 'Get Internal PSS for snapshot', 11, current_timestamp, current_timestamp);
+
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (102, 'initApprovePartsBundle', 'Init Approve Parts bundle process', 10, current_timestamp, current_timestamp);
 
 
 --##############################################################################################################################
@@ -505,6 +508,8 @@ INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permis
 INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (176, '87a59e0f-dd8c-4820-9bbe-a1ee46ab1bb3', 2, 100, 't', current_timestamp, current_timestamp);
 
 INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (177, '87a59e0f-dd8c-4820-9bbe-a1ee46ab1bb3', 1, 101, 't', current_timestamp, current_timestamp);
+
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (178, '87a59e0f-dd8c-4820-9bbe-a1ee46ab1bb3', 2, 102, 't', current_timestamp, current_timestamp);
 
 
 delete from duportal.postgraphql_operation where operation_id >= 43
