@@ -157,17 +157,22 @@ INSERT INTO duportal.group_type(group_type_id, group_type_name, description, cre
 
 --portal_menu
 
-INSERT INTO duportal.portal_menu(portal_menu_id, portal_menu_name, url, is_active, created_at, updated_at) VALUES (1, 'SI', 'https://devl-adudssportal.sandbox.dealeruplift.net/#/operations/swap-invoice-master', 't', current_timestamp, current_timestamp);
-INSERT INTO duportal.portal_menu(portal_menu_id, portal_menu_name, url, is_active, created_at, updated_at) VALUES (2, 'JO', 'https://devl-adudssportal.sandbox.dealeruplift.net/#/operations/joint-optimization', 't', current_timestamp, current_timestamp);
-INSERT INTO duportal.portal_menu(portal_menu_id, portal_menu_name, url, is_active, created_at, updated_at) VALUES (3, 'RO', 'https://devl-adudssportal.sandbox.dealeruplift.net/#/operations/ro-master-exception', 't',current_timestamp, current_timestamp);
-INSERT INTO duportal.portal_menu(portal_menu_id, portal_menu_name, url, is_active, created_at, updated_at) VALUES (4, 'MG', 'https://devl-adudssportal.sandbox.dealeruplift.net/#/operations/list-ro', 't', current_timestamp, current_timestamp);
-INSERT INTO duportal.portal_menu(portal_menu_id, portal_menu_name, url, is_active, created_at, updated_at) VALUES (5, 'SC', 'https://devl-adudssportal.sandbox.dealeruplift.net/#/operations/cloning-scenarios', 't', current_timestamp, current_timestamp);
-INSERT INTO duportal.portal_menu(portal_menu_id, portal_menu_name, url, is_active, created_at, updated_at) VALUES (6, 'FL', 'https://devl-adudssportal.sandbox.dealeruplift.net/#/operations/factory-labor-forms', 't', current_timestamp, current_timestamp);
-INSERT INTO duportal.portal_menu(portal_menu_id, portal_menu_name, url, is_active, created_at, updated_at) VALUES (7, 'DD', 'https://devl-adudssportal.sandbox.dealeruplift.net/#/operations/due-date-report', 't', current_timestamp, current_timestamp);
-INSERT INTO duportal.portal_menu(portal_menu_id, portal_menu_name, url, is_active, created_at, updated_at) VALUES (8, 'DASHBOARD', 'https://devl-adudssportal.sandbox.dealeruplift.net/#/dashboard', 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.portal_menu(portal_menu_id, portal_menu_name, url, is_active, created_at, updated_at) VALUES (1, 'SI', 'https://test-adudssportal.sandbox.dealeruplift.net/#/operations/swap-invoice-master', 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.portal_menu(portal_menu_id, portal_menu_name, url, is_active, created_at, updated_at) VALUES (2, 'JO', 'https://test-adudssportal.sandbox.dealeruplift.net/#/operations/joint-optimization', 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.portal_menu(portal_menu_id, portal_menu_name, url, is_active, created_at, updated_at) VALUES (3, 'RO', 'https://test-adudssportal.sandbox.dealeruplift.net/#/operations/ro-master-exception', 't',current_timestamp, current_timestamp);
+INSERT INTO duportal.portal_menu(portal_menu_id, portal_menu_name, url, is_active, created_at, updated_at) VALUES (4, 'MG', 'https://test-adudssportal.sandbox.dealeruplift.net/#/operations/list-ro', 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.portal_menu(portal_menu_id, portal_menu_name, url, is_active, created_at, updated_at) VALUES (5, 'SC', 'https://test-adudssportal.sandbox.dealeruplift.net/#/operations/cloning-scenarios', 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.portal_menu(portal_menu_id, portal_menu_name, url, is_active, created_at, updated_at) VALUES (6, 'FL', 'https://test-adudssportal.sandbox.dealeruplift.net/#/operations/factory-labor-forms', 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.portal_menu(portal_menu_id, portal_menu_name, url, is_active, created_at, updated_at) VALUES (7, 'DD', 'https://test-adudssportal.sandbox.dealeruplift.net/#/operations/due-date-report', 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.portal_menu(portal_menu_id, portal_menu_name, url, is_active, created_at, updated_at) VALUES (8, 'DASHBOARD', 'https://test-adudssportal.sandbox.dealeruplift.net/#/dashboard', 't', current_timestamp, current_timestamp);
+
+--Release
+INSERT INTO duportal.portal_menu(portal_menu_id, portal_menu_name, url, is_active, created_at, updated_at) VALUES (9, 'SS', 'https://test-adudssportal.sandbox.dealeruplift.net/#/store-searcher', 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.portal_menu(portal_menu_id, portal_menu_name, url, is_active, created_at, updated_at) VALUES (10, 'DO', 'https://test-adudssportal.sandbox.dealeruplift.net/#/create-data-master', 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.portal_menu(portal_menu_id, portal_menu_name, url, is_active, created_at, updated_at) VALUES (11, 'CP', 'https://test-adudssportal.sandbox.dealeruplift.net/#/dm-control-panel', 't', current_timestamp, current_timestamp);
 
 
---postgraphql_operation
+--postgraphql_operation 
 --SI
 INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (1, 'searchMagescenario', 'For querying scenariokeys', 1, current_timestamp, current_timestamp);
 INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (2, 'allMagescenarios', 'For querying all Magescenarios', 1, current_timestamp, current_timestamp);
@@ -217,9 +222,224 @@ INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, descrip
 INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (39, 'allMagescenarios', 'For querying all Magescenarios', 8, current_timestamp, current_timestamp);
 INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (40, 'mageSwapMaster', 'For performing swap', 8, current_timestamp, current_timestamp);
 
-delete from duportal.group_permission where operation_id = 41
-------
---**************--new-group
+--Release
+
+--SS(9)
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (41, 'insertStoreFromPortal', 'For adding store from Portal', 9, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (42, 'allSolve360StoreGroups', 'For listing all Store Groups from Solve360', 9, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (43, 'allStates', 'For listing all States', 9, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (44, 'allManufacturers', 'For listing all Manufacturers', 9, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (45, 'getStoresForStoreGroup', 'To get Stores for selected Store Group', 9, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (46, 'insertSolveStoreToPortal', 'To insert Solve360 Store to Portal', 9, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (47, 'getMetaGroupsForStoreGroup', 'To get get Meta Groups for Store Group', 9, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (48, 'insertSolveStoreGroupToPortal', 'To insert Solve360 Store Group to Portal', 9, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (49, 'addStoreToMetaGroup', 'To add Store to MetaGroup', 9, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (50, 'linkStoresToSolve', 'To link Stores to Solve', 9, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (51, 'unlinkStoresFromSolve', 'To unlink Stores from Solve', 9, current_timestamp, current_timestamp);
+
+--DM(10)
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (52, 'allSolve360StoreGroups', 'List all Store Groups', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (53, 'getStoresForStoreGroup', 'Get Stores For Store Group', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (54, 'createFsdForStore', 'Create Fsd For Store', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (55, 'allDataBundleSourceParts', 'Get allData Bundle Source Parts', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (56, 'getFsdDataForStore', 'Get Fsd data for Store', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (57, 'insertSourceParts', 'Insert Source Parts', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (58, 'insertBasisParts', 'Insert Basis Parts', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (59, 'allDataBundleBasisParts', 'Get all data Bundle Basis Parts', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (60, 'getSourceDataForTargetBundle', 'Get Source data for Target Bundle', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (61, 'insertTargetParts', 'Insert Target Parts', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (62, 'allDataBundleTargetParts', 'List all DataBundleTargetParts', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (63, 'getProjectionData', 'Get Projection Data', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (64, 'getFsdListForDm', 'Get Fsd List for Dm', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (65, 'updateFsdForStore', 'Update Fsd for Store', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (66, 'allDataMasters', 'List all DataMasters', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (67, 'createDataMasterForStore', 'Create Data Master For Store', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (68, 'updateDataMasterForStore', 'Update data Master for Store', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (69, 'allStoreS360Companies', 'List all Store Solve360 Companies', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (70, 'getPartProjectsForStore', 'Get Part Projects for Store', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (71, 'updateSourcePart', 'Update source Part', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (72, 'updateBasisPart', 'Update Basis Part', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (73, 'updateTargetPart', 'Update Target Part', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (74, 'linkProjectPartsWithDm', 'Link Project Parts With Dm', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (75, 'getDmLinkedPartProjects', 'Get Data master Linked Part Projects', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (76, 'unlinkProjectPartsFromDm', 'Unlink Project Parts From Data master', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (77, 'activateDatamaster', 'Activate Data master', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (78, 'allStores', 'List all Stores', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (79, 'createDataMasterAndFsdForStore', 'Create Data master And Fsd for Store', 10, current_timestamp, current_timestamp);
+
+--CP(11)
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (80, 'allSolve360StoreGroups', 'Get all Solve360 Store Groups', 11, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (81, 'getNewSnapshotForStoreGroup', 'Get NewSnapshot for Store Group', 11, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (82, 'allSnapshots', 'List all Snapshots', 11, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (83, 'createSnapshotForStoreGroup', 'Create Snapshot for StoreGroup', 11, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (84, 'getSnapshotVersionDetails', 'Get Snapshot Version Details', 11, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (85, 'getProjectionData', 'Get Projection Data', 11, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (86, 'getProjectionForStoresAndDm', 'Get Projection for Stores and Data master', 11, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (87, 'getProjectionForSnapshot', 'Get Projection for Snapshot', 11, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (88, 'getPrimaryBundleDataForDm', 'Get Primary bundle Data for Data master', 11, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (89, 'getSourceBundlesForDm', 'Get Source Bundles for Data master', 11, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (90, 'getSnapshotsForDm', 'Get Snapshots for Data master', 11, current_timestamp, current_timestamp);
+
+-- DM (10)
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (91, 'createMageForDm', 'Create Mage for Data master', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (92, 'allMages', 'Get all Mages', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (93, 'submitDataBundle', 'Submit Data Bundle', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (94, 'approveDataBundle', 'Approve Data Bundle', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (95, 'getPssForStoresAndDm', 'Approve Data Bundle', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (96, 'allSampleDataSets', 'Get all sample data set', 10, current_timestamp, current_timestamp);
+
+-- CP(11)
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (97, 'getPssForSnapshot', 'Get get Pss for Snapshot', 11, current_timestamp, current_timestamp);
+
+-- DM (10)
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (98, 'getInternalPssForStoresAndDm', 'Get Internal Pss for Stores and Data master', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (99, 'getSourceOfTarget', 'Get Source of target', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (100, 'createNewProjectionFromTarget', 'Create new projection from target', 10, current_timestamp, current_timestamp);
+
+-- CP(11)
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (101, 'getInternalPssForSnapshot', 'Get Internal PSS for snapshot', 11, current_timestamp, current_timestamp);
+
+---- CP(11)
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (102, 'initApprovePartsBundle', 'Init Approve Parts bundle process', 10, current_timestamp, current_timestamp);
+
+--SS(9)
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (103, 'createStore', 'Create Store in Solve360', 9, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (104, 'createSoloStore', 'Create Solo Store in Solve360', 9, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (105, 'createStoreGroup', 'Create Store Group in Solve360', 9, current_timestamp, current_timestamp);
+
+--DM(10)
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (106, 'createLwsForStore', 'Create Lws for Store', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (107, 'allLaborWorksheetData', 'List all Labor Work sheet Data', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (108, 'createLaborMageForDm', 'Create Labor Mage for Data master', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (109, 'allLaborMages', 'List all labors mages', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (110, 'allDataBundleTargetLabors', 'List all data bundle target labors', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (111, 'submitLaborDataBundle', 'Submit Labor Data Bundle', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (112, 'initApproveLaborBundle', 'Init Approve LaborBundle', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (113, 'approveLaborDataBundle', 'Approve Labor Data Bundle', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (114, 'getLaborSourceBundlesForDm', 'Get Labor Source Bundles for Data Master', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (115, 'getLaborSnapshotsForDm', 'Get Labor Snapshots for Data Master', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (116, 'updateSourceLabor', 'Update Source Labor', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (117, 'updateLwsForStore', 'Update Lws for Store', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (118, 'getLaborProjectsForStore', 'Get Labor Projects for Store', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (119, 'unlinkProjectLaborFromDm', 'Unlink Project Labor from Data Master', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (120, 'linkProjectLaborWithDm', 'Link Project Labor with Data Master', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (121, 'getDmLinkedLaborProjects', 'Get all Data Master linked Labor Projects', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (122, 'createPartsBest', 'Create Parts best', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (123, 'createLaborBest', 'Create Labor best', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (124, 'allDmBests', 'list all Data Master best', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (125, 'updatePartsBest', 'Update Parts best', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (126, 'updateLaborBest', 'Update labor best', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (127, 'createDmFsdAndLwsForStore', 'Create Data Master Fsd And Lws for Store', 10, current_timestamp, current_timestamp);
+
+--CP(11)
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (128, 'getLaborPssForSnapshot', 'getLaborPssForSnapshot', 11, current_timestamp, current_timestamp);
+
+--DM(10)
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (129, 'getLaborPssForStoresAndDm', 'getLaborPssForStoresAndDm', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (130, 'toggleTargetLaborActiveStatus', 'toggleTargetLaborActiveStatus', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (131, 'toggleTargetPartsActiveStatus', 'toggleTargetPartsActiveStatus', 10, current_timestamp, current_timestamp);
+
+--SS(9)
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (132, 'createProject', 'Create Project in Solve360', 9, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (133, 'updateLaborProject', 'Update Labor Project in Solve360', 9, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (134, 'updatePartsProject', 'Update Parts Project in Solve360', 9, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (135, 'readPayload', 'Read payload from Solve360 Subscription endpoint', 9, current_timestamp, current_timestamp);
+
+--DM(10)
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (136, 'getPartsTargetListForDm', 'Get Sorted Parts Target List', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (137, 'getLaborTargetListForDm', 'Get Sorted Labor Target List', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (138, 'getProjectListForStoreGroup', 'Get Project List For Store Group', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (139, 'getPartsBasisListForDm', 'Get Parts Basis List For Dm', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (140, 'getLaborBasisListForDm', 'Get Labor Basis List For Dm', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (141, 'toggleBasisPartsActiveStatus', 'Toggle Basis Parts Active Status', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (142, 'toggleBasisLaborActiveStatus', 'Toggle Basis Labor Active Status', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (143, 'finalizePartsBillingBasis', 'Finalize Parts Billing Basis', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (144, 'finalizeLaborBillingBasis', 'Finalize Labor Billing Basis', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (145, 'updatePartsRevenueData', 'Update Parts Revenue Data', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (146, 'updateLaborRevenueData', 'Update Labor Revenue Data', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (147, 'allPartsRevenues', 'List all Parts Revenues', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (148, 'allLaborRevenues', 'List all Labor Revenues', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (149, 'getDmLinkedProjects', 'Get all Dm Linked Projects', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (150, 'allS360Dms', 'Get allS360 Dms', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (151, 'getSourceOfBasis', 'Get Source of Basis', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (152, 'createBasisFromSource', 'Create Basis from Source', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (153, 'getBestValuesForDm', 'Get Best values for DM', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (154, 'addPortalTag', 'Add Portal Tag in any Solve360 object', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (155, 'retractPartsDm', 'Retract Parts Dm', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (156, 'retractLaborDm', 'Retract Labor Dm', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (157, 'reactivatePartsDm', 'Reactivate Parts Dm', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (158, 'reactivateLaborDm', 'Reactivate Labor Dm', 10, current_timestamp, current_timestamp);
+
+--
+
+
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (159, 'allS360CompanyHeaders', 'All S360 Company Headers', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (160, 'createPartsBasisFromSource', 'Create Parts Basis From Source', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (161, 'createLaborBasisFromSource', 'Create Labor Basis From Source', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (162, 'allSalesPeople', 'List All Sales People', 10, current_timestamp, current_timestamp);
+
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (163, 'allS360ProjectBases', 'All S360 Project Bases', 10, current_timestamp, current_timestamp);
+
+---- Release on 7-6-2018
+
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (164, 'receiveSubmittedPartsBundle', 'Receive Submitted Parts Bundle', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (165, 'receiveSubmittedLaborBundle', 'Receive Submitted PartsBundle', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (166, 'overridePartsBasis', 'Override Parts Basis', 10, current_timestamp, current_timestamp);
+
+-- Release on 
+
+
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (167, 'updatePartsClientComment', 'Update Parts Client Comment', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (168, 'updateLaborClientComment', 'Update Labor Client Comment', 10, current_timestamp, current_timestamp);
+
+
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (169, 'getProjectById', 'Get Project By Id', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (170, 'createPartsTargetFromSource', 'Create Parts Target From Source', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (171, 'overrideLaborBasis', 'Override Labor Basis', 10, current_timestamp, current_timestamp);
+
+
+
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (172, 'getPreAuditLaborForStoresAndDm', 'Get Pre Audit Labor for Stores and DM', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (173, 'getPreAuditLaborForSnapshot', 'Get Pre Audit Labor For Snapshot', 10, current_timestamp, current_timestamp);
+
+
+
+
+
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (174, 'allFilereferences', 'All Filereferences', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (175, 'isValidScenariokey', 'Is Valid Scenariokey', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (176, 'getBuildoutTime', 'Get Buildout Time', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (177, 'mageUpdateMeta', 'Mage Update Meta', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (178, 'rebuildBuildout', 'Rebuild Buildout', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (179, 'getScenarioOverview', 'Get Scenario Overview', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (180, 'generateImpactData', 'Generate Impact Data', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (181, 'generateAuditorData' ,'Generate Auditor Data', 10, current_timestamp, current_timestamp);
+
+
+
+
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (182, 'updateStoreGroup','Update solve360 store group', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (183, 'updateStore','Update solve360 store', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (184, 'updateSoloStore','Update solve360 solo store', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (185, 'validateCompanyName','Validate company name', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (186, 'updateStoreData','Update store data', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (187, 'updateStoreGroupData','Update store group data', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (188, 'getProjectionForStoresAndDmV2','Get Projection For Stores And Dm V2', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (189, 'getProjectionForSnapshotV2','Get Projection For Snapshot V2', 10, current_timestamp, current_timestamp);
+
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (190, 'updatePartsRevenueBaseData','Update Parts Revenue Base Data', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (191, 'updateLaborRevenueBaseData','Update Labor Revenue Base Data', 10, current_timestamp, current_timestamp);
+
+
+
+
+
+
+
+
+
+
+--#########################################
 --swap-invoice-master_RW
 INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (1, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 1, 't',current_timestamp, current_timestamp);
 INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (2, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 2, 't',current_timestamp, current_timestamp);
@@ -280,35 +500,319 @@ INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permis
 INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (40, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 40, 't', current_timestamp, current_timestamp);
 
 
+--Release
 
 
-select * from duportal.get_user_menu_info(ARRAY['7cc38e47-57a1-42ed-9aac-ed6d248c8603'])
+--SS-DEL - 4
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (41, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 41, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (42, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 42, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (43, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 43, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (44, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 44, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (45, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 45, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (46, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 46, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (47, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 47, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (48, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 48, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (49, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 49, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (50, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 50, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (51, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 4, 51, 't', current_timestamp, current_timestamp);
+
+--DM
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (52, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 52, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (53, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 53, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (54, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 54, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (55, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 55, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (56, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 56, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (57, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 57, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (58, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 58, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (59, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 59, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (60, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 60, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (61, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 61, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (62, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 62, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (63, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 63, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (64, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 64, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (65, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 65, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (66, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 66, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (67, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 67, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (68, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 68, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (69, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 69, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (70, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 70, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (71, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 71, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (72, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 72, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (73, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 73, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (74, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 74, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (75, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 75, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (76, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 4, 76, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (77, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 77, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (78, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 78, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (79, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 79, 't', current_timestamp, current_timestamp);
+
+--CP
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (80, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 80, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (81, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 81, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (82, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 82, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (83, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 83, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (84, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 84, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (85, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 85, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (86, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 86, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (87, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 87, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (88, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 88, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (89, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 89, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (90, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 90, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (91, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 91, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (92, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 92, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (93, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 93, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (94, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 94, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (95, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 95, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (96, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 96, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (97, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 97, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (98, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 98, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (99, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 99, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (100, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 100, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (101, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 101, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (102, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 102, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (103, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 103, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (104, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 104, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (105, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 105, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (106, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 106, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (107, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 107, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (108, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 108, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (109, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 109, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (110, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 110, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (111, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 111, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (112, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 112, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (113, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 113, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (114, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 114, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (115, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 115, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (116, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 116, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (117, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 117, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (118, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 118, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (119, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 119, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (120, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 120, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (121, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 121, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (122, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 122, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (123, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 123, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (124, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 124, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (125, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 125, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (126, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 126, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (127, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 127, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (128, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 128, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (129, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 129, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (130, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 130, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (131, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 131, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (132, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 132, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (133, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 133, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (134, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 134, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (135, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 135, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (136, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 136, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (137, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 137, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (138, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 138, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (139, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 139, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (140, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 140, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (141, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 141, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (142, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 142, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (143, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 143, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (144, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 144, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (145, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 145, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (146, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 146, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (147, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 147, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (148, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 148, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (149, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 149, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (150, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 150, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (151, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 151, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (152, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 152, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (153, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 153, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (154, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 154, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (155, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 155, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (156, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 156, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (157, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 157, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (158, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 158, 't', current_timestamp, current_timestamp);
+
+
+--
+
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (159, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 159, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (160, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 160, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (161, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 161, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (162, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 162, 't', current_timestamp, current_timestamp);
+
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (163, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 163, 't', current_timestamp, current_timestamp);
+
+
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (164, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 164, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (165, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 165, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (166, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 166, 't', current_timestamp, current_timestamp);
 
 
 
-[{"menu":"DASHBOARD","weightage":1}]
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (167, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 167, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (168, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 168, 't', current_timestamp, current_timestamp);
 
-delete from duportal.group_permission
 
-CREATE OR REPLACE FUNCTION duportal.get_user_menu_info(in_user_group_ids text[])
- RETURNS json
- LANGUAGE sql
- STABLE STRICT SECURITY DEFINER
-AS $function$
-	 SELECT json_agg(row_to_json(portal_group_info))
-    	FROM (
-    			SELECT menu, 
-    	         sum(w) as weightage 
-    	         	FROM (
-	    	         SELECT DISTINCT
-	    	         	 pm.portal_menu_name AS menu,
-		    	         p.weightage AS w
-		    	         FROM duportal.user_group ug
-		    	         JOIN duportal.group_permission gp ON ug.user_group_id = gp.user_group_id
-		    	         JOIN duportal.permission p ON p.permission_id = gp.permission_id
-		    	         JOIN duportal.postgraphql_operation po ON po.operation_id=gp.operation_id
-		    	         JOIN duportal.portal_menu pm ON pm.portal_menu_id = po.portal_menu_id
-		    	        WHERE ug.user_group_id = ANY (in_user_group_ids) AND pm.is_active AND gp.is_active
-	    	          ) tbl GROUP BY  menu
-	    	  ) portal_group_info
-$function$
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (169, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 169, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (170, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 170, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (171, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 171, 't', current_timestamp, current_timestamp);
+
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (172, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 172, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (173, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 173, 't', current_timestamp, current_timestamp);
+
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (174, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 174, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (175, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 175, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (176, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 176, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (177, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 177, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (178, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 178, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (179, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 179, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (180, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 180, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (181, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 181, 't', current_timestamp, current_timestamp);
+
+
+
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (182, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 182, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (183, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 183, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (184, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 184, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (185, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 185, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (186, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 186, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (187, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 2, 187, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (188, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 188, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (189, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 189, 't', current_timestamp, current_timestamp);
+
+
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (190, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 190, 't', current_timestamp, current_timestamp);
+INSERT INTO duportal.group_permission(group_permission_id, user_group_id, permission_id, operation_id, is_active, created_at, updated_at) VALUES (191, '7cc38e47-57a1-42ed-9aac-ed6d248c8603', 1, 191, 't', current_timestamp, current_timestamp);
+
+
+
+
+
+
+
+
+
+
+
+-----------------------
+
+----Oririnal for Release
+
+--SS(9)
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (41, 'insertStoreFromPortal', 'For adding store from Portal', 9, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (42, 'allSolve360StoreGroups', 'For listing all Store Groups from Solve360', 9, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (43, 'allStates', 'For listing all States', 9, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (44, 'allManufacturers', 'For listing all Manufacturers', 9, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (45, 'getStoresForStoreGroup', 'To get Stores for selected Store Group', 9, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (46, 'insertSolveStoreToPortal', 'To insert Solve360 Store to Portal', 9, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (47, 'getMetaGroupsForStoreGroup', 'To get get Meta Groups for Store Group', 9, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (48, 'insertSolveStoreGroupToPortal', 'To insert Solve360 Store Group to Portal', 9, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (49, 'addStoreToMetaGroup', 'To add Store to MetaGroup', 9, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (50, 'linkStoresToSolve', 'To link Stores to Solve', 9, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (51, 'unlinkStoresFromSolve', 'To unlink Stores from Solve', 9, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (52, 'createStore', 'Create Store in Solve360', 9, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (53, 'createSoloStore', 'Create Solo Store in Solve360', 9, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (54, 'createStoreGroup', 'Create Store Group in Solve360', 9, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (55, 'createProject', 'Create Project in Solve360', 9, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (56, 'updateLaborProject', 'Update Labor Project in Solve360', 9, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (57, 'updatePartsProject', 'Update Parts Project in Solve360', 9, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (58, 'readPayload', 'Read payload from Solve360 Subscription endpoint', 9, current_timestamp, current_timestamp);
+
+--DM(10)
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (59, 'allSolve360StoreGroups', 'List all Store Groups', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (61, 'getStoresForStoreGroup', 'Get Stores For Store Group', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (62, 'createFsdForStore', 'Create Fsd For Store', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (63, 'allDataBundleSourceParts', 'Get allData Bundle Source Parts', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (64, 'getFsdDataForStore', 'Get Fsd data for Store', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (65, 'insertSourceParts', 'Insert Source Parts', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (66, 'insertBasisParts', 'Insert Basis Parts', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (67, 'allDataBundleBasisParts', 'Get all data Bundle Basis Parts', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (68, 'getSourceDataForTargetBundle', 'Get Source data for Target Bundle', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (69, 'insertTargetParts', 'Insert Target Parts', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (60, 'allDataBundleTargetParts', 'List all DataBundleTargetParts', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (71, 'getProjectionData', 'Get Projection Data', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (72, 'getFsdListForDm', 'Get Fsd List for Dm', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (73, 'updateFsdForStore', 'Update Fsd for Store', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (74, 'allDataMasters', 'List all DataMasters', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (75, 'createDataMasterForStore', 'Create Data Master For Store', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (76, 'updateDataMasterForStore', 'Update data Master for Store', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (77, 'allStoreS360Companies', 'List all Store Solve360 Companies', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (78, 'getPartProjectsForStore', 'Get Part Projects for Store', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (79, 'updateSourcePart', 'Update source Part', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (70, 'updateBasisPart', 'Update Basis Part', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (81, 'updateTargetPart', 'Update Target Part', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (82, 'linkProjectPartsWithDm', 'Link Project Parts With Dm', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (83, 'getDmLinkedPartProjects', 'Get Data master Linked Part Projects', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (84, 'unlinkProjectPartsFromDm', 'Unlink Project Parts From Data master', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (85, 'activateDatamaster', 'Activate Data master', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (86, 'allStores', 'List all Stores', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (87, 'createDataMasterAndFsdForStore', 'Create Data master And Fsd for Store', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (88, 'createMageForDm', 'Create Mage for Data master', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (89, 'allMages', 'Get all Mages', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (80, 'submitDataBundle', 'Submit Data Bundle', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (91, 'approveDataBundle', 'Approve Data Bundle', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (92, 'getPssForStoresAndDm', 'Approve Data Bundle', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (93, 'allSampleDataSets', 'Get all sample data set', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (94, 'getSourceOfTarget', 'Get Source of target', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (95, 'getInternalPssForStoresAndDm', 'Get Internal Pss for Stores and Data master', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (96, 'createNewProjectionFromTarget', 'Create new projection from target', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (97, 'initApprovePartsBundle', 'Init Approve Parts bundle process', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (98, 'createLwsForStore', 'Create Lws for Store', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (99, 'allLaborWorksheetData', 'List all Labor Work sheet Data', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (100, 'createLaborMageForDm', 'Create Labor Mage for Data master', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (101, 'allLaborMages', 'List all labors mages', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (102, 'allDataBundleTargetLabors', 'List all data bundle target labors', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (103, 'submitLaborDataBundle', 'Submit Labor Data Bundle', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (104, 'initApproveLaborBundle', 'Init Approve LaborBundle', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (105, 'approveLaborDataBundle', 'Approve Labor Data Bundle', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (106, 'getLaborSourceBundlesForDm', 'Get Labor Source Bundles for Data Master', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (107, 'getLaborSnapshotsForDm', 'Get Labor Snapshots for Data Master', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (108, 'updateSourceLabor', 'Update Source Labor', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (109, 'updateLwsForStore', 'Update Lws for Store', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (110, 'getLaborProjectsForStore', 'Get Labor Projects for Store', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (111, 'unlinkProjectLaborFromDm', 'Unlink Project Labor from Data Master', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (112, 'linkProjectLaborWithDm', 'Link Project Labor with Data Master', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (113, 'getDmLinkedLaborProjects', 'Get all Data Master linked Labor Projects', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (114, 'createPartsBest', 'Create Parts best', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (115, 'createLaborBest', 'Create Labor best', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (116, 'allDmBests', 'list all Data Master best', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (117, 'updatePartsBest', 'Update Parts best', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (118, 'updateLaborBest', 'Update labor best', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (119, 'createDmFsdAndLwsForStore', 'Create Data Master Fsd And Lws for Store', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (120, 'getLaborPssForStoresAndDm', 'getLaborPssForStoresAndDm', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (121, 'toggleTargetLaborActiveStatus', 'toggleTargetLaborActiveStatus', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (122, 'toggleTargetPartsActiveStatus', 'toggleTargetPartsActiveStatus', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (123, 'getPartsTargetListForDm', 'Get Sorted Parts Target List', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (124, 'getLaborTargetListForDm', 'Get Sorted Labor Target List', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (125, 'getProjectListForStoreGroup', 'Get Project List For Store Group', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (126, 'getPartsBasisListForDm', 'Get Parts Basis List For Dm', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (127, 'getLaborBasisListForDm', 'Get Labor Basis List For Dm', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (128, 'toggleBasisPartsActiveStatus', 'Toggle Basis Parts Active Status', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (129, 'toggleBasisLaborActiveStatus', 'Toggle Basis Labor Active Status', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (130, 'finalizePartsBillingBasis', 'Finalize Parts Billing Basis', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (131, 'finalizeLaborBillingBasis', 'Finalize Labor Billing Basis', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (132, 'updatePartsRevenueData', 'Update Parts Revenue Data', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (133, 'updateLaborRevenueData', 'Update Labor Revenue Data', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (134, 'allPartsRevenues', 'List all Parts Revenues', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (135, 'allLaborRevenues', 'List all Labor Revenues', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (136, 'getDmLinkedProjects', 'Get all Dm Linked Projects', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (137, 'allS360Dms', 'Get allS360 Dms', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (138, 'getSourceOfBasis', 'Get Source of Basis', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (139, 'createBasisFromSource', 'Create Basis from Source', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (140, 'getBestValuesForDm', 'Get Best values for DM', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (141, 'addPortalTag', 'Add Portal Tag in any Solve360 object', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (142, 'retractPartsDm', 'Retract Parts Dm', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (143, 'retractLaborDm', 'Retract Labor Dm', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (144, 'reactivatePartsDm', 'Reactivate Parts Dm', 10, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (145, 'reactivateLaborDm', 'Reactivate Labor Dm', 10, current_timestamp, current_timestamp);
+
+--CP(11)
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (146, 'allSolve360StoreGroups', 'Get all Solve360 Store Groups', 11, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (147, 'getNewSnapshotForStoreGroup', 'Get NewSnapshot for Store Group', 11, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (148, 'allSnapshots', 'List all Snapshots', 11, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (149, 'createSnapshotForStoreGroup', 'Create Snapshot for StoreGroup', 11, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (, 'getSnapshotVersionDetails', 'Get Snapshot Version Details', 11, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (, 'getProjectionData', 'Get Projection Data', 11, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (, 'getLaborPssForSnapshot', 'getLaborPssForSnapshot', 11, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (, 'getProjectionForStoresAndDm', 'Get Projection for Stores and Data master', 11, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (, 'getProjectionForSnapshot', 'Get Projection for Snapshot', 11, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (, 'getPrimaryBundleDataForDm', 'Get Primary bundle Data for Data master', 11, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (, 'getSourceBundlesForDm', 'Get Source Bundles for Data master', 11, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (, 'getSnapshotsForDm', 'Get Snapshots for Data master', 11, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (, 'getPssForSnapshot', 'Get get Pss for Snapshot', 11, current_timestamp, current_timestamp);
+INSERT INTO duportal.postgraphql_operation(operation_id, operation_name, description, portal_menu_id, created_at, updated_at) VALUES (1, 'getInternalPssForSnapshot', 'Get Internal PSS for snapshot', 11, current_timestamp, current_timestamp);
